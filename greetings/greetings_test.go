@@ -42,6 +42,6 @@ func TestHellosEmpty(t *testing.T) {
 	names := []string{"Gladys", ""}
 	messages, err := Hellos(names)
 	if (len(messages) != 0 || err == nil) {
-		t.Fatalf(`test`)
+		t.Fatalf(`Hellos should return an error if contains an empty name`)
 	}
 }
